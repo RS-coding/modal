@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Modal exercise made with HTML,CSS and JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Raquel Santos">
+    <title>Modal</title>
+
+     <!--Style-->
+    <link rel="stylesheet" href="style.css">
+
+     <!--font awesome-->
+    <script src="https://kit.fontawesome.com/b8a00d31c0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!--hero-->
+    <header class="hero">
+        <div class="logo">
+            <img src="assets/logo-ctt.svg" alt="logo">
+        </div>
+        <div class="banner">
+            <h1>Send and Receive</h1>
+            <h2>Send without leaving home and receive wherever it is most convenient for you</h2>
+            <button class="btn modal-btn">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <!--modal-->
+    <div class="modal-overlay">
+        <div class="modal-container">
+            <!--close btn-->
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="content">
+                <h3>Online Shipments</h3>
+                <p>Send your orders without leaving the office.Fill the form, make the payment online and choose whether you would like us to pick up the shipment at your home or office.</p>
+                <!--form here-->
+                <form id='form' class="formulary" action="POST">
+                    <label for="name">Name</label>
+                    <input id="name" type="text">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname">
+                    <label for="email" id="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                    <input class="submit-btn" type="submit" value="submit">
+                </form>
+            </div>
+            
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
